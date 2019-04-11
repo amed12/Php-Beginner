@@ -27,4 +27,56 @@ echo 'Halo saya ' . $name . '  '.'Saya seorang '.$proffesion.' yang lagi kerja d
 echo '<br>';
 echo "My name is $name $proffesion.\nI am a master of time and space. \"Yatta!\"";
 
+/*
+Variable Scoope .. Bagaimana sebuah variable dapat diakses darimanapun
+-> Variable diluar function tidak dapat diakses didalam function begitu juga sebaliknya
+jika masih ngeyel pengen akses lewat fungsi tambahkan global didalam fungsi
+Static Variable .. Jika variable dididefinisikan sebagai static maka ketika dijalankan fungsi 
+tersebut nilai variable akan selalu tetap biasanya cocok untuk ngetes berapa kali fungsi tersebut dijalankan contoh dibawah
+*/
+
+$b = 7;
+
+function coba(){
+    $a = 10;
+    echo '<br>';
+    echo $a;
+    echo $b;
+}
+
+coba();
+
+function cobaStatic(){
+    static $a = 0;
+    $a = $a + 1;
+    echo $a;
+}
+cobaStatic();
+cobaStatic();
+cobaStatic();
+cobaStatic();
+/*
+STATIC Method (Function) dan Property (Variable)
+seluruh property dan method hanya bisa diakses dari objek, maka static property dan static method adalah pengecualiannya.
+Static property dan static method adalah property (variabel) dan method (function) yang melekat kepada class, bukan kepada objek. 
+Konsep static property memang ‘agak keluar’ dari konsep objek sebagai tempat melakukan proses, karena sebenarnya class hanya 
+merupakan ‘blueprint’ saja.
+*/
+class yoman {
+    public static $member;
+
+    public static function beli_laptop() {
+        echo "Beli laptopnya om";
+    }
+}
+yoman::$member=400000;
+echo "<br>";
+echo "Harga beli Rp.".yoman::$member;
+echo "<br>";
+echo yoman::beli_laptop();
+
+print_r(get_loaded_extensions());
+
+
+?>
 

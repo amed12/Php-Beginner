@@ -124,10 +124,49 @@ $status2 = array(
 'name' => 'James Potter',
 'status' => 'dead'
 );
+//Populating array
+$names1[]='Faisal';
+$status1['age']= 13;
+print_r($names1,$status1);
+//Update array
+$names1[0]="Ja'far";
+print_r($names1);
+//Isset to know position of array and empty to know value of array is empty or not
+echo '<br>';
+echo "===========";
+echo '<br>';
+var_dump(empty($names1));
+//pakai isset untuk tau exist or not sesuai dengan posisi yang diminta
+var_dump(isset($names1[0]));
+
 /*
 Menampilkan isi ARRAY
 =============
 */
+//Akses isi array sesuai posisi
+echo "<hr>";
+//untuk mencari isi dari array bisa menggunakan 2 fungsi : 1. in_array untuk mengetahui apakah didalam array tersebut ada value yang kita cari atau tidak 2. array_search untuk mengetahui value dari yang kita cari posisinya dimana dari sebuah array
+$cariFaisal = in_array("Ron",$names1);
+$cariPosisiFaisal = array_search("Ron",$names1);
+echo '<br> aaw';
+var_dump($cariFaisal);
+echo '<br>';
+var_dump($cariPosisiFaisal);
+echo 'Ordering array <br>';
+$properties = [
+    'Kelas X-A'=>'Savrida',
+    'Kelas X-B'=>'Mila',
+    'Kelas X-C'=>'Lina'];
+$properties1=$properties2=$properties2=$properties3=$properties;
+sort($properties1);
+var_dump($properties1);//Sorting dari rendah ke besar tanpa key
+echo "<br>";
+asort($properties2);
+var_dump($properties2);
+echo "<br>";
+ksort($properties3);
+var_dump($properties3);
+echo "<br>";
 echo $names1[0]. "<br>";//atau
 for($i=0;$i < count($names1);$i++){
     echo $names1[$i]."<br>";
