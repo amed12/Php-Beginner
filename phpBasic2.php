@@ -75,8 +75,20 @@ echo "Harga beli Rp.".yoman::$member;
 echo "<br>";
 echo yoman::beli_laptop();
 
-print_r(get_loaded_extensions());
 
+
+
+echo '<br>';
+echo '<br>';
+echo "Contoh Pengkondisian :";
+echo '<hr>';
+if(11 > 10){
+    echo "Kondisi yang kita inginkan"; //true
+  }
+  
+if(3 > 4){
+    echo ""/"Kondisi yang kita inginkan tidak jalan";//false
+}
 
 ?>
 
