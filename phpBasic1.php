@@ -196,4 +196,3 @@ $matrik = [
 ];
 print_r($matrik[0]);
 print_r($matrik[0][1]);
-?>

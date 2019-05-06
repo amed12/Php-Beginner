@@ -83,12 +83,24 @@ echo '<br>';
 echo "Contoh Pengkondisian :";
 echo '<hr>';
 if(11 > 10){
-    echo "Kondisi yang kita inginkan"; //true
+    echo "\"Kondisi yang kita inginkan jalan\""; //true
   }
   
 if(3 > 4){
-    echo ""/"Kondisi yang kita inginkan tidak jalan";//false
+    echo "\"Kondisi yang kita inginkan tidak jalan\"";//false
 }
 
-?>
+echo '<hr>';
 
+$judulFilm = 'Titanic';
+
+switch ($judulFilm) {
+  case 'Harry Potter':
+        echo "Tidak sesuai keadaan";
+  case 'Titanic':
+        echo "Sesuai keadaan   ";
+        break;
+  default:
+        echo "Kondisi lain";
+
+}
