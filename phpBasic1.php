@@ -196,5 +196,8 @@ $matrik = [
 ];
 print_r($matrik[0]);
 print_r($matrik[0][1]);
+<<<<<<< HEAD
 
 ?>
+=======
+>>>>>>> b4eb5564fe20073a0727d4890abf519fb87a6780

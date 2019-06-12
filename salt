@@ -1,0 +1,54 @@
+refresh token simplenya itu kayak session lu didalam aplikasi
+kalo transaction Token itu session yg digenerate per skali transaksi istilahnya abis pake itu udh basi
+
+bikin environment di website setting
+accountNo->cardtype == PRIMA
+{
+$dataLimitBawah = getWebsiteSetting('PRIMA_LIMIT_BAWAH')
+$dataLimitAtas = getWebsiteSetting('PRIMA_LIMIT_ATAS')
+}else if(accountNo->cardtype == PLUS){
+$dataLimitBawah = getWebsiteSetting('PLUS_LIMIT_BAWAH')
+$dataLimitAtas = getWebsiteSetting('PLUS_LIMIT_ATAS')
+}else{
+$dataLimitBawah = getWebsiteSetting('DEFAULT_LIMIT_BAWAH')
+$dataLimitAtas = getWebsiteSetting('DEFAULT_LIMIT_ATAS')
+}
+
+
+----------AJ-------------
+netstat -tulpn | grep 9503 
+kill -9 processId
+cd /var/www/bankmantap-swoole/ 
+php server.php
+
+--------Core---------------
+netstat -tulpn | grep 9504
+kill -9 processId
+cd /var/www/bankmantap-core/ 
+php serverCore.php
+
+tail -f log_file.txt
+
+raceroute 10.17.77.11ping 10.17.77.11telnet 10.17.77.11 30564cb lakuin 3 command itu
+
+nanti tulis command tracert 10.17.77.11 30564
+ssh mantap@203.142.71.179 -p 30922
+
+D7+OwGP+e6s=
+
+<form action="/?controller=content&action=submitnews">
+First name:<br>
+<input type="text" name="firstname" value="Mickey">
+<br>
+Last name:<br>
+<input type="text" name="lastname" value="Mouse">
+<br><br>
+<input type="submit" value="Submit">
+</form> 
+
+<p>If you click the "Submit" button, the form-data will be sent to a page called "/action_page.php".</p>
+
+admin
+P@ssw0rdSALT123
+php7.1,php7.1-gd,php7.1-imap,php7.1-cgi,php-pear,mcrypt,imagemagick,libruby,php7.1-curl,php7.1-intl,php7.1-pspell,php7.1-recode,php7.1-sqlite3,php7.1-tidy,php7.1-xmlrpc,php7.1-xsl,memcached,php-memcache,php-imagick,php-gettext,php7.1-cli,php7.1-common,php7.1-json,php7.1-opcache,php7.1-mysql,php7.1-mbstring,php7.1-mcrypt,php7.1-zip,php7.1-fpm
+

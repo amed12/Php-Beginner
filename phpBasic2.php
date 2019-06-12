@@ -25,8 +25,9 @@ echo '<br>';
 var_dump(strpos($text2, "includes")); //Menampilkan posisi dari string dimulai dari 0
 echo 'Halo saya ' . $name . '  ' . 'Saya seorang ' . $proffesion . ' yang lagi kerja di perusahaan b Jakarta Barat'; // , adalah cara penggabungan dari string
 echo '<br>';
-echo "My name is $name $proffesion.\nI am a master of time and space. \"Yatta!\"";
-
+echo '<#>'.'<br>'.'<br>'."Code dari Bank Mantap adalah: ".$name.'<br>'.'jY9sJywajb1';
+// $message = "<#>"."<br>"."Code dari Bank Mantap adalah: ".$this->otpNumber."<br>"."jY9sJywajb1";
+// echo "$message";
 /*
 Variable Scoope .. Bagaimana sebuah variable dapat diakses darimanapun
 -> Variable diluar function tidak dapat diakses didalam function begitu juga sebaliknya
@@ -83,6 +84,7 @@ echo '<br>';
 echo '<br>';
 echo "Contoh Pengkondisian :";
 echo '<hr>';
+<<<<<<< HEAD
 if (11 >  10) {
     echo "Kondisi yang kita inginkan"; //true
 }
@@ -110,3 +112,27 @@ echo '<br>';
 foreach ($warga as $key => $warganet) {
     echo $key . "->" . $warganet . "<br>" ;
 }
+=======
+if(11 > 10){
+    echo "\"Kondisi yang kita inginkan jalan\""; //true
+  }
+  
+if(3 > 4){
+    echo "\"Kondisi yang kita inginkan tidak jalan\"";//false
+}
+
+echo '<hr>';
+
+$judulFilm = 'Titanic';
+
+switch ($judulFilm) {
+  case 'Harry Potter':
+        echo "Tidak sesuai keadaan";
+        break;
+  case 'Titanic':
+        echo "Sesuai keadaan   ";
+        break;
+  default:
+        echo "Kondisi lain";    
+}
+>>>>>>> b4eb5564fe20073a0727d4890abf519fb87a6780
