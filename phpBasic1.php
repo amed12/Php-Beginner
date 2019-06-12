@@ -1,5 +1,4 @@
 <?php
-
 $a = 3;
 $b = 2;
 $c = $a + $b;
@@ -105,8 +104,9 @@ $kalimat = "aku suka dia";
 echo strlen($kalimat);
 echo str_word_count($kalimat). "<br />";
 echo strrev($kalimat). "<br />";
-echo str_replace("dia","AFL",$kalimat). "<br />";
-echo "$kalimat adalah sebuah cerita \"fiktif\" \nyang ceritanya panjang \t begitu". "<br />";
+echo str_replace("dia", "AFL", $kalimat). "<br />";
+echo "$kalimat adalah sebuah cerita \"fiktif\" \nyang ceritanya panjang \t begitu".
+     "<br />";
 /*
 INISIASI ARRAY
 =============
@@ -196,4 +196,5 @@ $matrik = [
 ];
 print_r($matrik[0]);
 print_r($matrik[0][1]);
+
 ?>
